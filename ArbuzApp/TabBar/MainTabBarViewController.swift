@@ -17,8 +17,8 @@ class MainTabBarViewController: UITabBarController {
         setViewControllers([homeVC,basketVC], animated: true)
         homeVC.tabBarItem = UITabBarItem(title: "Главное", image: UIImage(named: "home"), tag: 0)
         basketVC.tabBarItem = UITabBarItem(title: "Корзина", image: UIImage(named: "basket"), tag: 1)
-        self.tabBar.tintColor = UIColor(Colors.greenColor)
-        self.tabBar.unselectedItemTintColor = UIColor(Colors.grayColor)
+        self.tabBar.tintColor = UIColor(Colors.green)
+        self.tabBar.unselectedItemTintColor = UIColor(Colors.gray)
         
         //
 //        let homeVC = HomeViewController()

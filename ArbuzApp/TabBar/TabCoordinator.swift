@@ -86,8 +86,8 @@ class TabCoordinator: NSObject, Coordinator {
         tabBarController.tabBar.backgroundColor = UIColor(Colors.backgroundColor)
         
         tabBarController.tabBar.barTintColor = UIColor.black
-        tabBarController.tabBar.tintColor = UIColor(Colors.greenColor)
-        tabBarController.tabBar.unselectedItemTintColor = UIColor(Colors.grayColor)
+        tabBarController.tabBar.tintColor = UIColor(Colors.green)
+        tabBarController.tabBar.unselectedItemTintColor = UIColor(Colors.gray)
         
         navigationController.viewControllers = [tabBarController]
 
