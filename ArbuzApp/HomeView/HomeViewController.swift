@@ -9,8 +9,10 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    let viewModel = HomeViewModel()
+    
     private lazy var homeView: UIViewController = {
-        HomeView().convertSwiftUIToHosting()
+        HomeView(viewModel: viewModel).convertSwiftUIToHosting()
     }()
     
     override func viewDidLoad() {
