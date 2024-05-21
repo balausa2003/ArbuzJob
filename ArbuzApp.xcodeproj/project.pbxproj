@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B979830A2BF6133D002E6A73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97983092BF6133D002E6A73 /* AppDelegate.swift */; };
-		B979830E2BF6133D002E6A73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B979830D2BF6133D002E6A73 /* ViewController.swift */; };
 		B97983132BF61342002E6A73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B97983122BF61342002E6A73 /* Assets.xcassets */; };
 		B97983162BF61342002E6A73 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B97983152BF61342002E6A73 /* Base */; };
 		B979831F2BF61480002E6A73 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = B979831E2BF61480002E6A73 /* SwiftyJSON */; };
@@ -22,7 +21,6 @@
 		B979833B2BF62784002E6A73 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B979833A2BF62784002E6A73 /* HomeViewController.swift */; };
 		B979833E2BF627F3002E6A73 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B979833D2BF627F3002E6A73 /* BasketViewController.swift */; };
 		B97983402BF63758002E6A73 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B979833F2BF63758002E6A73 /* AppCoordinator.swift */; };
-		B97983422BF63EA6002E6A73 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97983412BF63EA6002E6A73 /* MainTabBarViewController.swift */; };
 		B97983452BF64003002E6A73 /* SkeletonUI in Frameworks */ = {isa = PBXBuildFile; productRef = B97983442BF64003002E6A73 /* SkeletonUI */; };
 		B97E72002BF6B5160032F042 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97E71FF2BF6B5160032F042 /* UIViewController + Extension.swift */; };
 		B97E72022BF6B53A0032F042 /* View + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97E72012BF6B53A0032F042 /* View + Extension.swift */; };
@@ -31,12 +29,17 @@
 		B9E0A7DB2BF8D1D1003F5284 /* Double + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E0A7DA2BF8D1D1003F5284 /* Double + Extension.swift */; };
 		B9E0A7DD2BF8E879003F5284 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E0A7DC2BF8E878003F5284 /* CustomButtonView.swift */; };
 		B9E0A7DF2BFA2338003F5284 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E0A7DE2BFA2338003F5284 /* BottomSheetView.swift */; };
+		B9E0A7E12BFBC1DC003F5284 /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E0A7E02BFBC1DC003F5284 /* BasketView.swift */; };
+		B9E0A7E32BFBC4D5003F5284 /* BasketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E0A7E22BFBC4D5003F5284 /* BasketViewModel.swift */; };
+		B9E0A7E72BFBD771003F5284 /* ShoppingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E0A7E62BFBD771003F5284 /* ShoppingManager.swift */; };
+		B9E4534F2BFCE19C00B33E19 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E4534E2BFCE19C00B33E19 /* PaymentViewController.swift */; };
+		B9E453532BFCE23F00B33E19 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E453522BFCE23F00B33E19 /* PaymentView.swift */; };
+		B9E453552BFCEB4300B33E19 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E453542BFCEB4300B33E19 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B97983062BF6133D002E6A73 /* ArbuzApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArbuzApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97983092BF6133D002E6A73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B979830D2BF6133D002E6A73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B97983122BF61342002E6A73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B97983152BF61342002E6A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B97983172BF61342002E6A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,7 +49,6 @@
 		B979833A2BF62784002E6A73 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B979833D2BF627F3002E6A73 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
 		B979833F2BF63758002E6A73 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		B97983412BF63EA6002E6A73 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		B97E71FF2BF6B5160032F042 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 		B97E72012BF6B53A0032F042 /* View + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Extension.swift"; sourceTree = "<group>"; };
 		B97E72032BF6B5E70032F042 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,12 @@
 		B9E0A7DA2BF8D1D1003F5284 /* Double + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double + Extension.swift"; sourceTree = "<group>"; };
 		B9E0A7DC2BF8E878003F5284 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
 		B9E0A7DE2BFA2338003F5284 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		B9E0A7E02BFBC1DC003F5284 /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
+		B9E0A7E22BFBC4D5003F5284 /* BasketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewModel.swift; sourceTree = "<group>"; };
+		B9E0A7E62BFBD771003F5284 /* ShoppingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingManager.swift; sourceTree = "<group>"; };
+		B9E4534E2BFCE19C00B33E19 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		B9E453522BFCE23F00B33E19 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		B9E453542BFCEB4300B33E19 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +100,10 @@
 		B97983082BF6133D002E6A73 /* ArbuzApp */ = {
 			isa = PBXGroup;
 			children = (
+				B9E4534D2BFCE18200B33E19 /* PaymentView */,
 				B97983392BF6275C002E6A73 /* HomeView */,
 				B979833C2BF627DB002E6A73 /* BasketView */,
 				B979832B2BF61815002E6A73 /* TabBar */,
-				B979830D2BF6133D002E6A73 /* ViewController.swift */,
 				B97983352BF62259002E6A73 /* Application */,
 				B97983362BF62278002E6A73 /* Resources */,
 				B97983322BF62135002E6A73 /* Coordinator */,
@@ -109,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				B979832E2BF61959002E6A73 /* TabCoordinator.swift */,
-				B97983412BF63EA6002E6A73 /* MainTabBarViewController.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -157,6 +164,9 @@
 			isa = PBXGroup;
 			children = (
 				B979833D2BF627F3002E6A73 /* BasketViewController.swift */,
+				B9E0A7E02BFBC1DC003F5284 /* BasketView.swift */,
+				B9E0A7E22BFBC4D5003F5284 /* BasketViewModel.swift */,
+				B9E0A7E62BFBD771003F5284 /* ShoppingManager.swift */,
 			);
 			path = BasketView;
 			sourceTree = "<group>";
@@ -169,6 +179,16 @@
 				B9E0A7DA2BF8D1D1003F5284 /* Double + Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B9E4534D2BFCE18200B33E19 /* PaymentView */ = {
+			isa = PBXGroup;
+			children = (
+				B9E4534E2BFCE19C00B33E19 /* PaymentViewController.swift */,
+				B9E453522BFCE23F00B33E19 /* PaymentView.swift */,
+				B9E453542BFCEB4300B33E19 /* LoadingView.swift */,
+			);
+			path = PaymentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,17 +277,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9E0A7DD2BF8E879003F5284 /* CustomButtonView.swift in Sources */,
-				B979830E2BF6133D002E6A73 /* ViewController.swift in Sources */,
 				B97983382BF62327002E6A73 /* Colors.swift in Sources */,
 				B979830A2BF6133D002E6A73 /* AppDelegate.swift in Sources */,
-				B97983422BF63EA6002E6A73 /* MainTabBarViewController.swift in Sources */,
+				B9E0A7E32BFBC4D5003F5284 /* BasketViewModel.swift in Sources */,
+				B9E0A7E12BFBC1DC003F5284 /* BasketView.swift in Sources */,
 				B97E72022BF6B53A0032F042 /* View + Extension.swift in Sources */,
 				B97983342BF62141002E6A73 /* Coordinator.swift in Sources */,
+				B9E4534F2BFCE19C00B33E19 /* PaymentViewController.swift in Sources */,
 				B97983402BF63758002E6A73 /* AppCoordinator.swift in Sources */,
 				B97E72002BF6B5160032F042 /* UIViewController + Extension.swift in Sources */,
 				B9E0A7DB2BF8D1D1003F5284 /* Double + Extension.swift in Sources */,
+				B9E453532BFCE23F00B33E19 /* PaymentView.swift in Sources */,
 				B9E0A7DF2BFA2338003F5284 /* BottomSheetView.swift in Sources */,
+				B9E453552BFCEB4300B33E19 /* LoadingView.swift in Sources */,
 				B9E0A7D72BF78007003F5284 /* HomeViewModel.swift in Sources */,
+				B9E0A7E72BFBD771003F5284 /* ShoppingManager.swift in Sources */,
 				B979832F2BF61959002E6A73 /* TabCoordinator.swift in Sources */,
 				B97E72042BF6B5E70032F042 /* HomeView.swift in Sources */,
 				B979833B2BF62784002E6A73 /* HomeViewController.swift in Sources */,

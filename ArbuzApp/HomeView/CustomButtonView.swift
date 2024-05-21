@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct CustomButtonView: View {
+    @ObservedObject var basketModel = ShoppingManager.shared
     @State var minQuantity: Double
     @State var isPressed: Bool
-    var startValue: Double
     @State var price: Int
+    var startValue: Double
+    var image: String
     var name: String
     var mass: String
     var body: some View {
@@ -39,6 +41,7 @@ struct CustomButtonView: View {
             .padding(.bottom)
             Button {
                 isPressed = true
+                addItemToBasket()
             } label: {
                 if isPressed {
                     CustomStepper(value: $minQuantity, isPressed: $isPressed, startValue: startValue)
@@ -72,6 +75,13 @@ struct CustomButtonView: View {
     private func getPrice() -> Int {
          return  Int(Double(price) * minQuantity)
     }
+    private func addItemToBasket() {
+        if isPressed {
+            basketModel.addItem(Product(name: name, image: image , price: price, mass: mass, quantity: minQuantity))
+        } else {
+            basketModel.removeLast()
+        }
+    }
 }
 
 struct CustomStepper: View {
@@ -103,7 +113,7 @@ struct CustomStepper: View {
     }
     
     private func plusQuantity()  {
-       value = value + startValue
+        value = value + startValue
     }
     
     private func minusQuantity() {
@@ -118,5 +128,5 @@ struct CustomStepper: View {
 }
 
 #Preview {
-    CustomButtonView(minQuantity: 0.6, isPressed: false, startValue: 0.6, price: 4258, name: "Potato", mass: "kg")
+    CustomButtonView(minQuantity: 0.6, isPressed: false, price: 4258, startValue: 0.6, image: "grapes", name: "Potato", mass: "kg")
 }

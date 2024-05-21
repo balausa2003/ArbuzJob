@@ -10,7 +10,7 @@ struct HomeView: View {
         GridItem(.flexible())
     ]
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             VStack {
                 HStack(spacing: 10) {
                     Image("logo")
@@ -53,8 +53,9 @@ struct HomeView: View {
                     ForEach(0..<viewModel.products.count, id: \.self) { i in
                         VStack(alignment: .leading) {
                             CustomProductCard(price: viewModel.products[i].price, minQuantity: viewModel.products[i].minQuantity, name: viewModel.products[i].name, mass: viewModel.products[i].mass, image: viewModel.products[i].image)
-                                .padding(.bottom)
-//                            CustomButtonView(minQuantity: viewModel.products[i].minQuantity, isPressed: false, startValue: viewModel.products[i].minQuantity, price: viewModel.products[i].price)
+                                .padding(.bottom,2)
+                            
+                            CustomButtonView(minQuantity: viewModel.products[i].minQuantity, isPressed: false, price: viewModel.products[i].price, startValue: viewModel.products[i].minQuantity, image: viewModel.products[i].image, name: viewModel.products[i].name, mass: viewModel.products[i].mass)
                         }
                     }
                 }
@@ -63,6 +64,8 @@ struct HomeView: View {
             }
            
         }
+        .padding(.bottom,1)
+        .background(Colors.backgroundColor)
        
     }
 }
@@ -107,14 +110,12 @@ struct CustomProductCard: View {
                                 .scaledToFill()
                                 .frame(width: 110,height: 110)
                         }
-                        .sheet(isPresented: $showBottomSheet) {
-                                    BottomSheetView(isPresented: $showBottomSheet)
-                        }
                     }
+                    .sheet(isPresented: $showBottomSheet, content: {
+                        BottomSheetView(isPresented: $showBottomSheet, isLiked: $isLiked, image: image, name: name, price: price, minquantity: minQuantity, mass: mass)
+                    })
                 }
             }
-    
-            CustomButtonView(minQuantity: minQuantity, isPressed: false, startValue: minQuantity, price: price, name: name, mass: mass)
         }
         .frame(maxHeight: 250)
     }
@@ -122,7 +123,6 @@ struct CustomProductCard: View {
         return Int(Double(price) * minQuantity)
     }
 }
-
 
 #Preview {
     HomeView(viewModel: HomeViewModel())

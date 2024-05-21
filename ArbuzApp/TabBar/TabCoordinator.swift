@@ -33,6 +33,14 @@ enum TabBarPage {
             return UIImage(systemName: "basket")!
         }
     }
+    func pageTitleName() -> String {
+        switch self {
+        case .home:
+            return "Главное"
+        case .basket:
+            return "Корзина"
+        }
+    }
 }
 
 protocol TabCoordinatorProtocol: Coordinator {
@@ -96,7 +104,7 @@ class TabCoordinator: NSObject, Coordinator {
         let navController = UINavigationController()
         navController.setNavigationBarHidden(false, animated: false)
         
-        navController.tabBarItem = UITabBarItem.init(title: "",
+        navController.tabBarItem = UITabBarItem.init(title: page.pageTitleName(),
                                                      image:  page.pageImageValue(),
                                                      tag: page.pageOrderNumber())
         switch page {
