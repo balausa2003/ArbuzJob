@@ -55,7 +55,7 @@ struct HomeView: View {
                             CustomProductCard(price: viewModel.products[i].price, minQuantity: viewModel.products[i].minQuantity, name: viewModel.products[i].name, mass: viewModel.products[i].mass, image: viewModel.products[i].image)
                                 .padding(.bottom,2)
                             
-                            CustomButtonView(minQuantity: viewModel.products[i].minQuantity, isPressed: false, startValue: viewModel.products[i].minQuantity, price: viewModel.products[i].price, name: viewModel.products[i].name, mass: viewModel.products[i].mass)
+                            CustomButtonView(minQuantity: viewModel.products[i].minQuantity, isPressed: false, price: viewModel.products[i].price, startValue: viewModel.products[i].minQuantity, image: viewModel.products[i].image, name: viewModel.products[i].name, mass: viewModel.products[i].mass)
                         }
                     }
                 }
